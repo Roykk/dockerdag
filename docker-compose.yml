@@ -1,0 +1,21 @@
+nodeservice:
+  hostname: node-microservice
+  build: nodeDock/
+  ports:
+    - "8200:8082"
+  links:
+    - mongodb
+
+springbootservice:
+  hostname: spring-microservice
+  build: springboot/
+  ports:
+    - "8100:8081"
+  links:
+    - nodeservice    
+
+mongodb:
+  hostname: mongo-db-host
+  image: mongo:3.0.0
+  ports:
+    - "27017"

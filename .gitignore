@@ -1,0 +1,8 @@
+node_modules
+*.class
+*.log
+# Intellij Idea Files #
+.idea
+*.iml
+logs
+target

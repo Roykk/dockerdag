@@ -1,0 +1,15 @@
+{
+  "name": "docker-node",
+  "private": true,
+  "version": "0.0.1",
+  "description": "NodeApp in docker , with extremly small image!!",
+  "author": "Roy Kjellid <roy.kjellid@sonat.no>",
+  "dependencies": {
+    "express": "3.2.4",
+    "node-gyp": "3.2.1",
+    "bson": "0.4.20",
+    "kerberos": "0.0.17",
+    "mongodb-core": "1.2.26",
+    "mongodb": "2.1.0"
+  }
+}

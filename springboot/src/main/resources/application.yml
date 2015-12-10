@@ -1,0 +1,5 @@
+server:
+  port: 8081
+
+nodeapp:
+  endpoint: http://nodeservice:8082
