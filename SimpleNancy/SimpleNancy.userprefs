@@ -1,0 +1,30 @@
+﻿<Properties StartupItem="SimpleNancy.SelfHost/SimpleNancy.SelfHost.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleNancy.SelfHost/Program.cs">
+    <Files>
+      <File FileName="SimpleNancy.SelfHost/Program.cs" Line="43" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SimpleNancy.SelfHost>
+    <MonoDevelop.Ide.CustomExecutionModes>
+      <Data Name="Default (Custom 2)" Id="44941652-ea6e-4ccf-b414-0acd33dd0782" ModeId="Default">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables>
+                <Item Key="PORT0" Value="1236" />
+              </EnvironmentVariables>
+            </Value>
+          </Item>
+          <Item Key="MonoDevelop.Ide.Execution.MonoExecutionCustomizer">
+            <Value ctype="MonoExecutionParameters" />
+          </Item>
+        </CommandData>
+      </Data>
+    </MonoDevelop.Ide.CustomExecutionModes>
+  </MonoDevelop.Ide.ItemProperties.SimpleNancy.SelfHost>
+</Properties>

@@ -14,6 +14,14 @@ springbootservice:
   links:
     - nodeservice    
 
+#mononancynet:
+#  hostname: net-nancy-mono-service
+#  build: SimpleNancy/
+#  ports:
+#    - "8100:8081"
+#  links:
+#    - nodeservice
+
 mongodb:
   hostname: mongo-db-host
   image: mongo:3.0.0
