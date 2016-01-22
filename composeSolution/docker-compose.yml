@@ -1,0 +1,29 @@
+springbootservice:
+  hostname: spring-microservice
+  build: springboot/
+  ports:
+    - "8100:8081"
+  links:
+    - nodeservice
+
+#mononancynet:
+#  hostname: net-nancy-mono-service
+#  build: SimpleNancy/
+#  ports:
+#    - "8100:8081"
+#  links:
+#    - nodeservice
+
+nodeservice:
+  hostname: node-microservice
+  build: nodeDock/
+  ports:
+    - "8082:8082"  #just showing that you can map whatever port u want
+  links:
+    - mongodb
+
+mongodb:
+  hostname: mongo-db-host
+  image: mongo:3.0.0
+  ports:
+    - "27017"

@@ -1,29 +1,16 @@
-nodeservice:
-  hostname: node-microservice
-  build: nodeDock/
-  ports:
-    - "8200:8082"
-  links:
-    - mongodb
-
 springbootservice:
   hostname: spring-microservice
   build: springboot/
   ports:
     - "8100:8081"
-  links:
-    - nodeservice    
 
 #mononancynet:
 #  hostname: net-nancy-mono-service
 #  build: SimpleNancy/
 #  ports:
 #    - "8100:8081"
-#  links:
-#    - nodeservice
 
-mongodb:
-  hostname: mongo-db-host
-  image: mongo:3.0.0
-  ports:
-    - "27017"
+#HINT 1: MAYBE YOU SHOULD SET UP A NODESERVICE?
+#HINT 2: MAYBE YOU SHOULD TAKE A LOOK AT LINK?
+#HINT 3: DO YOU NEED A MONGO?
+

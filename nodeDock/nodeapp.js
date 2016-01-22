@@ -11,7 +11,7 @@ var assert = require('assert');
 var port = 8082;
 var app = express();
 app.get('/ping', function (req, res) {
-  res.send('Amazing! you just pinged the node applications. Why dont you try the path "/nodeInsert" or "/nodeGet \n');
+  res.send('Amazing! you just pinged the node application.');
 });
 
 app.get('/nodeInsert', function (req, res) {
