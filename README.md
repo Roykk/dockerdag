@@ -1,24 +1,22 @@
 #Fagdag: Docker 101
----
- ########################################################################################################
 
-Ting du trenger( gjerne last ned før fagdagen):
-
+********************************************
+##Ting du trenger(gjerne før fagdagen):
 1. OSX/Windows: Last ned docker-toolbox på https://www.docker.com/docker-toolbox (docker, docker-compose, virtualbox)
 2. Installer node.. https://nodejs.org/en/download/
 
- #######################################################################################################
+********************************************
 
+##Oppgaver:
 
-Last ned kode: ``` git clone https://github.com/Roykk/dockerdag ```
+Last ned kode: 
+		git clone https://github.com/Roykk/dockerdag
 
 Opprett en dockermaskin:
 
-``` docker-machine create --driver virtualbox myDocker```
-
-``` docker-machine env myDocker ```
-
-``` eval $(docker-machine env myDocker) ```
+		docker-machine create --driver virtualbox myDocker
+		docker-machine env myDocker
+		eval $(docker-machine env myDocker)
 
 Kjør ```docker-machine ip``` og se ipadressen!
 
