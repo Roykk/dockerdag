@@ -32,7 +32,7 @@ Spør om hjelp hvis en sitter fast.
 
 		cd springboot
 		mvn install
-		java -jar target/springboot-1.0-SNAPSHOT.jar
+		java -jar  -Djava.security.egd=file:/dev/./urandom target/springboot-1.0-SNAPSHOT.jar
 		curl mot localhost:8081/ping  (eller bruk browser)
 
 
