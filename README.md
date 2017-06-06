@@ -1,15 +1,15 @@
-#Tutorial: Docker 101
+# Tutorial: Docker 101
 
 This is a quick Docker 101 course with tasks.
 The Live folder is just a live demo i made to present before making the students perform the tasks
 
 ********************************************
-##Stuff needed:
+## Stuff needed:
 1. OSX/Windows: download docker-toolbox  https://www.docker.com/docker-toolbox (docker, docker-compose, virtualbox)
 2. Install node,java,.net, or a language you would like to work with
 ********************************************
 
-##Tasks:
+## Tasks:
 
 Download code: 
 		git clone https://github.com/Roykk/dockerdag
