@@ -1,39 +1,36 @@
-#Fagdag: Docker 101
+#Tutorial: Docker 101
 
 ********************************************
-##Ting du trenger(gjerne før fagdagen):
-1. OSX/Windows: Last ned docker-toolbox på https://www.docker.com/docker-toolbox (docker, docker-compose, virtualbox)
-2. Installer node.. https://nodejs.org/en/download/
-
+##Stuff needed:
+1. OSX/Windows: download docker-toolbox  https://www.docker.com/docker-toolbox (docker, docker-compose, virtualbox)
+2. Install node,java,.net, or a language you would like to work with
 ********************************************
 
-##Oppgaver:
+##Tasks:
 
-Last ned kode: 
+Download code: 
 		git clone https://github.com/Roykk/dockerdag
 
-Opprett en dockermaskin:
+Create a docker machine
 
 		docker-machine create --driver virtualbox myDocker
 		docker-machine env myDocker
 		eval $(docker-machine env myDocker)
 
-Kjør ```docker-machine ip``` og se ipadressen!
+run ```docker-machine ip``` and note your ip-address!
 
-### Oppgaver 1:
-#####Bli kjent med docker: Opprett en dockerfil, bygg et dockerimage og start en container.
+### Task 1:
+#####Get to know docker: Create a dockerfile, build a docker imageand start a container.
 
-Det er på forhånd laget 3 webapplikasjoner, dockerifiser så mange av de du kan.
-Alle har en løsningsmappe, dette er dockerfile som kan brukes i oppgave 2 dersom oppgave 1 gikk te h.... IKKE JUKSE!!! :)
-
-Spør om hjelp hvis en sitter fast.
+3 different webapps is created in different languages, dockerize as many as you can.
+All of them has a solutions folder, this is a dockerfile which can be used in futher in task2. 
 
 1. Springboot   (Java)
 
 		cd springboot
 		mvn install
 		java -jar  -Djava.security.egd=file:/dev/./urandom target/springboot-1.0-SNAPSHOT.jar
-		curl mot localhost:8081/ping  (eller bruk browser)
+		curl mot localhost:8081/ping  (or use your browser browser)
 
 
 2. NodeDock     (Node)
@@ -41,33 +38,33 @@ Spør om hjelp hvis en sitter fast.
 		cd nodeDock
 		npm install
 		node nodeapp.js
-		curl localhost:8082/ping (eller bruk browser)
+		curl localhost:8082/ping (or use your browser browser)
 
-3. SimpleNancy  (.NET , denne e litt avansert og mest med som showcase)
+3. SimpleNancy  (.NET , created just as showcase, to show .net in docker and linux)
 
-		Bygg og kjør den opp .net way (I dont have a clue :fu: )
+		Build and run it the .net way
 		curl localhost:8082/ping
 
 
-Alle web applikasjoner har en løsningsmappe. Dette er til bruk i steg 2 hvis du ikke fikk til denne oppgaven. Spør om hjelp hvis en sitter fast.
+all web appliacations has a solutions folder. Please take a peak there if you are stuck
 
 
-###Oppgave 2
-##### Bli kjent med docker-compose: Få servicer til å prate sammen! Java --> Node --> MongoDB
+###Task 2
+##### Get to know docker-compose: Make services talk together! Java --> Node --> MongoDB
 
-		Gå til dockerdag, og se på docker-compose.yml
+		Go to /dockerdag, and look at docker-compose.yml
 		docker-compose up
-		curl localhost:8081/count  / eller bruk browser
+		curl localhost:8081/count (or use your browser browser)
 
-Prøv å ferdigstill docker-compose.yml!
+Try to complete the docker-compose.yml!
 
-(PS. Bruk gjerne dockerfile i løsningsfolder i de respektive java/net/node i denne oppgaven)
+(PS. please use  dockerfile in solutions, if you have not completed them yourself)
 
 
-###Oppgave 3
-##### Utforsk, lek og tafs på Docker
+###Task 3
+##### Challenge yourself, play around with Docker
 
-		Har du noe eget prosjekt du vil prøve å dockerifisere?
-		Lyst å prøve å hive containeren din ut i en cloud?
+		DO you have your own project you want to dockerize??
+		Do you want to test you docker in the cloud?
 		Play with docker!
 
