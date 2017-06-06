@@ -3,6 +3,11 @@
 This is a quick Docker 101 course with tasks.
 The Live folder is just a live demo i made to present before making the students perform the tasks
 
+/Live is Java with dropwizared in docker
+/SimpleNancy is C# in docker
+/nodedock is node in docker
+/springboot is Java with springboot in docker
+
 ********************************************
 ## Stuff needed:
 1. OSX/Windows: download docker-toolbox  https://www.docker.com/docker-toolbox (docker, docker-compose, virtualbox)
