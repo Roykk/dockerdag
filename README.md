@@ -52,7 +52,7 @@ All of them has a solutions folder, this is a dockerfile which can be used in fu
 all web appliacations has a solutions folder. Please take a peak there if you are stuck
 
 
-###Task 2
+### Task 2
 ##### Get to know docker-compose: Make services talk together! Java --> Node --> MongoDB
 
 		Go to /dockerdag, and look at docker-compose.yml
@@ -64,7 +64,7 @@ Try to complete the docker-compose.yml!
 (PS. please use  dockerfile in solutions, if you have not completed them yourself)
 
 
-###Task 3
+### Task 3
 ##### Challenge yourself, play around with Docker
 
 		DO you have your own project you want to dockerize??
